@@ -1,0 +1,68 @@
+<div class="container">
+
+    <h1>Cadastro de Estudante</h1>
+
+    <!-- Informações de entrada para o cadastro -->
+    <div class="form">
+    <form class="row g-3">
+        <form [formGroup]="formGroupClient">
+        <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label"><strong>Nome</strong></label>
+              <input type="text" class="form-control" formControlName="nome" id="nome" placeholder="Nome">
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label"><strong>E-mail</strong></label>
+              <input type="text" class="form-control" formControlName="email" id="email" placeholder="E-mail">
+            </div>
+          </div>
+        
+        <div class="row g-3">
+            <div class="col-sm-4">
+              <label class="form-label"><strong>Telefone</strong></label>
+              <input type="text" class="form-control" formControlName="telefone" id="telefone" placeholder="Telefone">
+            </div>
+            <div class="col-sm-4">
+              <label class="form-label"><strong>Idade</strong></label>
+              <input type="text" class="form-control" formControlName="idade" id="idade" placeholder="Idade">
+            </div>
+            <div class="col-sm-4">
+              <label class="form-label"><strong>Curso</strong></label>
+              <input type="text" class="form-control" formControlName="curso" id="curso" placeholder="Curso">
+            </div>
+          </div>
+        </form>
+       
+     <!-- Botão que efetua o cadastro -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" (click)="save()">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+
+     <!-- Informações da lista de saída -->
+     <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Curso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let estudante of estudantes">
+            <th scope="row">{{estudante.id}}</th>
+            <td>{{estudante.nome}}</td>
+            <td>{{estudante.email}}</td>
+            <td>{{estudante.telefone}}</td>
+            <td>{{estudante.idade}}</td>
+            <td>{{estudante.curso}}</td>
+        </tbody>
+      </table>
+
+
+
+</div>

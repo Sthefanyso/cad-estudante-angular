@@ -1,0 +1,52 @@
+{
+  "estudantes": [
+    {
+      "id": 1,
+      "nome": "Ellen Oliveira",
+      "email": "ellenolv@gmail.com",
+      "telefone": "998138343",
+      "idade": "20",
+      "curso": "ADS"
+    },
+    {
+      "id": 2,
+      "nome": "Sthefany Souza",
+      "email": "sthefanydsilva29@gmail.com",
+      "telefone": "944613317",
+      "idade": "19",
+      "curso": "ADS"
+    },
+    {
+      "id": 3,
+      "nome": "Nicolas Ribeiro",
+      "email": "nicolasribeiro@gmail.com",
+      "telefone": "950581804",
+      "idade": "19",
+      "curso": "ADS"
+    },
+    {
+      "id": 4,
+      "nome": "Beatriz Matos",
+      "email": "beatrizmatos@gmail.com",
+      "telefone": "972086494",
+      "idade": "19",
+      "curso": "ADS"
+    },
+    {
+      "id": 5,
+      "nome": "Guilherme Kazuo",
+      "email": "guikazuo@gmail.com",
+      "telefone": "968499418",
+      "idade": "19",
+      "curso": "ADS"
+    },
+    {
+      "id": 6,
+      "nome": "Leticia Rosa",
+      "email": "lehrosa@gmail.com",
+      "telefone": "988068119",
+      "idade": "19",
+      "curso": "ADS"
+    }
+  ]
+}
